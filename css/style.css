@@ -1,0 +1,29 @@
+.navigation {
+    background-color: #F0F0F0;
+    display: flex;
+    margin: 0 0%;
+}
+
+.navOptions {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    font-family: american typewriter;
+    font-size: 30px;
+    font-style: semibold;
+    color: #B48E8E;
+    
+}
+
+.highlight {
+    display: flex;
+    height: 0;
+    align-items: flex-start;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: phosphate;
+    font-size: 150px;
+    font-style: inline;
+    color: #717E6E;
+}
