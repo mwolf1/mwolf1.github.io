@@ -14,7 +14,10 @@
     font-size: 30px;
     font-style: semibold;
     color: #B48E8E;
-    
+}
+
+.navItem {
+    width: 10%;
 }
 
 .highlight {
@@ -24,20 +27,7 @@
     font-size: 150px;
     font-style: inline;
     color: #717E6E;
-}
-
-h1 {
-    font-family: phosphate;
-    font-size: 150px;
-    font-style: inline;
-    color: #717E6E;
-}
-
-h2 {
-    font-family: american typewriter;
-    font-size: 50px;
-    font-style: semibold;
-    color: #B48E8E;
+    margin: 0px 5px
 }
 
 img {
@@ -53,8 +43,912 @@ img {
 }
 
 #headingCircle {
+    margin: 0;
     position: absolute;
-    top: 400px;
-    left: 520px;
+    top: 75%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, -50%)
+}
+
+#containerGrid {
+    display: grid;
+    height: 800px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "headingOne headingOne headingOne headingOne"
+    "headshot headshot aboutInfo aboutInfo";
+}
+
+.headingOne {
+    grid-area: headingOne;
+    font-family: phosphate;
+    font-size: 150px;
+    font-style: inline;
+    color: #717E6E;
+    background-color: #EDE3DF;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.headshot {
+    grid-area: headshot;
+    background-color: #EDE3DF;
+}
+
+.aboutInfo {
+    grid-area: aboutInfo;
+    background-color: #EDE3DF;
+    margin-left: 10px;
+}
+
+.aboutInfo h3 {
+    font-family: american typewriter;
+    font-size: 25px;
+    font-style: Semibold;
+    color: #707070;
+}
+
+.aboutInfo p {
+    font-family: american typewriter;
+    font-size: 20px;
+    font-style: Regular;
+    color: #707070;
+}
+
+#containerGridTwo {
+    display: grid;
+    height: 800px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "headingTwo headingTwo headingTwo headingTwo"
+    "crawlCure crawlCure nasa nasa";
+}
+
+.headingTwo {
+    grid-area: headingTwo;
+    font-family: phosphate;
+    font-size: 150px;
+    font-style: inline;
+    color: #717E6E;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px
+}
+
+#crawlCure {
+    grid-area: crawlCure;
+    background-color: #D6DBD5;
+    margin-bottom: 35px;
+}
+
+#nasa {
+    grid-area: nasa;
+    background-color: #D6DBD5;
+    margin-bottom: 35px;
+}
+
+#containerGridThree {
+    display: grid;
+    height: 850px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "headingTwo headingTwo headingTwo headingTwo headingTwo"
+    "empathy define ideate prototype test"
+    "empathyH3 defineH3 ideateH3 prototypeH3 testH3"
+    "empathyp definep ideatep prototypep testp";
+}
+
+#empathy {
+    grid-area: empathy;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0px 30px 0px;
+}  
+
+#define {
+    grid-area: define;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0px 30px 0px;
+} 
+
+#ideate {
+    grid-area: ideate;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0px 30px 0px;
+} 
+
+#prototype {
+    grid-area: prototype;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0px 30px 0px;
+} 
+
+#test {
+    grid-area: test;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0px 30px 0px;
+} 
+
+.empathyH3 {
+    grid-area: empathyH3
+    font-family: american typewriter;
+    font-size: 25px;
+    font-style: Semibold;
+    color: #707070;
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+}
+
+.empathyp {
+    grid-area: empathyp;
+    font-family: american typewriter;
+    font-size: 20px;
+    font-style: Regular;
+    color: #707070;
+    text-align: center;
+    list-style: none;
+}
+
+.defineH3 {
+    grid-area: defineH3;
+    font-family: american typewriter;
+    font-size: 25px;
+    font-style: Semibold;
+    color: #707070;
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+}
+
+.definep {
+    grid-area: definep;
+    font-family: american typewriter;
+    font-size: 20px;
+    font-style: Regular;
+    color: #707070;
+    text-align: center;
+    list-style: none;
+}
+
+.ideateH3 {
+    grid-area: ideateH3;
+    font-family: american typewriter;
+    font-size: 25px;
+    font-style: Semibold;
+    color: #707070;
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+}
+
+.ideatep {
+    grid-area: ideatep;
+    font-family: american typewriter;
+    font-size: 20px;
+    font-style: Regular;
+    color: #707070;
+    text-align: center;
+    list-style: none;
+}
+
+.prototypeH3 {
+    grid-area: prototypeH3;
+    font-family: american typewriter;
+    font-size: 25px;
+    font-style: Semibold;
+    color: #707070;
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+}
+
+.prototypep {
+    grid-area: prototypep;
+    font-family: american typewriter;
+    font-size: 20px;
+    font-style: Regular;
+    color: #707070;
+    text-align: center;
+    list-style: none;
+}
+
+.testH3 {
+    grid-area: testH3;
+    font-family: american typewriter;
+    font-size: 25px;
+    font-style: Semibold;
+    color: #707070;
+    text-align: center;
+    padding: 20px 20px 0px 20px;
     
+}
+
+.testp {
+    grid-area: testp;
+    font-family: american typewriter;
+    font-size: 20px;
+    font-style: Regular;
+    color: #707070;
+    text-align: center;
+    list-style: none;
+}
+
+
+
+.greenBox {
+    background-color: #D6DBD5;
+}
+
+.pinkBox {
+    background-color: #EDE3DF;
+}
+
+@media only screen and (max-width: 1060px){
+    .navigation {
+        background-color: #F0F0F0;
+        display: flex;
+        margin: 0 0%;
+        height: 150px;
+    }
+    
+    .navOptions {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: american typewriter;
+        font-size: 20px;
+        font-style: semibold;
+        color: #B48E8E;
+    }
+    
+    .navItem {
+        width: 10%;
+    }
+    
+    .highlight {
+        cursor: pointer;
+        text-decoration: none;
+        font-family: phosphate;
+        font-size: 100px;
+        font-style: inline;
+        color: #717E6E;
+        margin: 0px 5px
+    }
+    #headingCircle {
+        margin: 0;
+        position: absolute;
+        top: 69%;
+        left: 50%;
+        margin: 0;
+        transform: translate(-50%, -50%)
+        width: 400px;
+        height: 500px;
+    }
+    #containerGrid {
+        display: grid;
+        height: 600px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "headingOne headingOne headingOne headingOne"
+        "headshot headshot aboutInfo aboutInfo";
+    }
+    
+    .headingOne {
+        grid-area: headingOne;
+        font-family: phosphate;
+        font-size: 100px;
+        font-style: inline;
+        color: #717E6E;
+        background-color: #EDE3DF;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .headshot {
+        grid-area: headshot;
+        background-color: #EDE3DF;
+    }
+    
+    .aboutInfo {
+        grid-area: aboutInfo;
+        background-color: #EDE3DF;
+        margin-left: 10px;
+    }
+    
+    .aboutInfo h3 {
+        font-family: american typewriter;
+        font-size: 19px;
+        font-style: Semibold;
+        color: #707070;
+    }
+    
+    .aboutInfo p {
+        font-family: american typewriter;
+        font-size: 14px;
+        font-style: Regular;
+        color: #707070;
+    }
+    #containerGridTwo {
+        display: grid;
+        height: 600px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "headingTwo headingTwo headingTwo headingTwo"
+        "crawlCure crawlCure nasa nasa";
+    }
+    
+    .headingTwo {
+        grid-area: headingTwo;
+        font-family: phosphate;
+        font-size: 100px;
+        font-style: inline;
+        color: #717E6E;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    #crawlCure {
+        grid-area: crawlCure;
+        background-color: #D6DBD5;
+        margin-bottom: 35px;
+    }
+    
+    #nasa {
+        grid-area: nasa;
+        background-color: #D6DBD5;
+        margin-bottom: 35px;
+    }
+
+    #containerGridThree {
+        display: grid;
+        height: 700px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "headingTwo headingTwo headingTwo headingTwo headingTwo"
+        "empathy define ideate prototype test"
+        "empathyH3 defineH3 ideateH3 prototypeH3 testH3"
+        "empathyp definep ideatep prototypep testp";
+    }
+    
+    #empathy {
+        grid-area: empathy;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px 0px 30px 0px;
+    }  
+    
+    #define {
+        grid-area: define;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px 0px 30px 0px;
+    } 
+    
+    #ideate {
+        grid-area: ideate;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px 0px 30px 0px;
+    } 
+    
+    #prototype {
+        grid-area: prototype;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px 0px 30px 0px;
+    } 
+    
+    #test {
+        grid-area: test;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px 0px 30px 0px;
+    } 
+    
+    .empathyH3 {
+        grid-area: empathyH3
+        font-family: american typewriter;
+        font-size: 19px;
+        font-style: Semibold;
+        color: #707070;
+        text-align: center;
+       
+    }
+    
+    .empathyp {
+        grid-area: empathyp;
+        font-family: american typewriter;
+        font-size: 14px;
+        font-style: Regular;
+        color: #707070;
+        text-align: center;
+        list-style: none;
+    }
+    
+    .defineH3 {
+        grid-area: defineH3;
+        font-family: american typewriter;
+        font-size: 19px;
+        font-style: Semibold;
+        color: #707070;
+        text-align: center;
+       
+    }
+    
+    .definep {
+        grid-area: definep;
+        font-family: american typewriter;
+        font-size: 14px;
+        font-style: Regular;
+        color: #707070;
+        text-align: center;
+        list-style: none;
+    }
+    
+    .ideateH3 {
+        grid-area: ideateH3;
+        font-family: american typewriter;
+        font-size: 19px;
+        font-style: Semibold;
+        color: #707070;
+        text-align: center;
+       
+    }
+    
+    .ideatep {
+        grid-area: ideatep;
+        font-family: american typewriter;
+        font-size: 14px;
+        font-style: Regular;
+        color: #707070;
+        text-align: center;
+        list-style: none;
+    }
+    
+    .prototypeH3 {
+        grid-area: prototypeH3;
+        font-family: american typewriter;
+        font-size: 19px;
+        font-style: Semibold;
+        color: #707070;
+        text-align: center;
+      
+    }
+    
+    .prototypep {
+        grid-area: prototypep;
+        font-family: american typewriter;
+        font-size: 14px;
+        font-style: Regular;
+        color: #707070;
+        text-align: center;
+        list-style: none;
+    }
+    
+    .testH3 {
+        grid-area: testH3;
+        font-family: american typewriter;
+        font-size: 19px;
+        font-style: Semibold;
+        color: #707070;
+        text-align: center;
+    
+        
+    }
+    
+    .testp {
+        grid-area: testp;
+        font-family: american typewriter;
+        font-size: 14px;
+        font-style: Regular;
+        color: #707070;
+        text-align: center;
+        list-style: none;
+    }
+    
+}
+
+@media only screen and (max-width: 845px){
+    #headingCircle {
+        margin: 0;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        margin: 0;
+        transform: translate(-50%, -50%)
+        width: 300px;
+        height: 400px;
+    }
+    #containerGrid {
+        display: grid;
+        height: 450px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "headingOne headingOne headingOne headingOne"
+        "headshot headshot aboutInfo aboutInfo";
+    }
+    
+    .headingOne {
+        grid-area: headingOne;
+        font-family: phosphate;
+        font-size: 80px;
+        font-style: inline;
+        color: #717E6E;
+        background-color: #EDE3DF;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .headshot {
+        grid-area: headshot;
+        background-color: #EDE3DF;
+    }
+    
+    .aboutInfo {
+        grid-area: aboutInfo;
+        background-color: #EDE3DF;
+        margin-left: 10px;
+    }
+    
+    .aboutInfo h3 {
+        font-family: american typewriter;
+        font-size: 15px;
+        font-style: Semibold;
+        color: #707070;
+    }
+    
+    .aboutInfo p {
+        font-family: american typewriter;
+        font-size: 11px;
+        font-style: Regular;
+        color: #707070;
+    }
+    #containerGridTwo {
+        display: grid;
+        height: 550px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "headingTwo headingTwo headingTwo headingTwo"
+        "crawlCure crawlCure nasa nasa";
+    }
+    
+    .headingTwo {
+        grid-area: headingTwo;
+        font-family: phosphate;
+        font-size: 80px;
+        font-style: inline;
+        color: #717E6E;
+        display: flex;
+        width: 90%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    #crawlCure {
+        grid-area: crawlCure;
+        background-color: #D6DBD5;
+        margin-bottom: 35px;
+    }
+    
+    #nasa {
+        grid-area: nasa;
+        background-color: #D6DBD5;
+        margin-bottom: 35px;
+    }
+
+}
+
+@media only screen and (max-width: 415px){
+
+    .navigation {
+        background-color: #F0F0F0;
+        display: flex;
+        margin: 0 0%;
+        height: 100px;
+    }
+    
+    .navOptions {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: american typewriter;
+        font-size: 10px;
+        font-style: semibold;
+        color: #B48E8E;
+    }
+    
+    .navItem {
+        width: 10%;
+    }
+    
+    .highlight {
+        cursor: pointer;
+        text-decoration: none;
+        font-family: phosphate;
+        font-size: 50px;
+        font-style: inline;
+        color: #717E6E;
+        margin: 0px 5px
+    }
+    #headingCircle {
+        margin: 0;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        margin: 0;
+        transform: translate(-50%, -50%)
+        width: 100px;
+        height: 200px;
+    }
+
+    #containerGrid {
+        display: grid;
+        height: 725px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "headingOne headingOne headingOne headingOne"
+        "headshot headshot headshot headshot"
+        "aboutInfo aboutInfo aboutInfo aboutInfo";
+    }
+    
+    .headingOne {
+        grid-area: headingOne;
+        font-family: phosphate;
+        font-size: 50px;
+        font-style: inline;
+        color: #717E6E;
+        background-color: #EDE3DF;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .headshot {
+        grid-area: headshot;
+        background-color: #EDE3DF;
+    }
+    
+    .aboutInfo {
+        grid-area: aboutInfo;
+        background-color: #EDE3DF;
+        margin-left: 10px;
+    }
+    
+    .aboutInfo h3 {
+        font-family: american typewriter;
+        font-size: 15px;
+        font-style: Semibold;
+        color: #707070;
+    }
+    
+    .aboutInfo p {
+        font-family: american typewriter;
+        font-size: 11px;
+        font-style: Regular;
+        color: #707070;
+    }
+
+    #containerGridTwo {
+        display: grid;
+        height: 800px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "headingTwo headingTwo headingTwo headingTwo"
+        "crawlCure crawlCure crawlCure crawlCure"
+        "nasa nasa nasa nasa";
+    }
+    
+    .headingTwo {
+        grid-area: headingTwo;
+        font-family: phosphate;
+        font-size: 50px;
+        font-style: inline;
+        color: #717E6E;
+        background-color: #D6DBD5;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    #crawlCure {
+        grid-area: crawlCure;
+        background-color: #D6DBD5;
+    }
+    
+    #nasa {
+        grid-area: nasa;
+        background-color: #D6DBD5;
+    }
+
+    #containerGridThree {
+        display: grid;
+        height: 1000px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "headingTwo headingTwo headingTwo headingTwo headingTwo headingTwo"
+        "empathy empathy define define ideate ideate"
+        "empathyH3 empathyH3 defineH3 defineH3 ideateH3 ideateH3"
+        "empathyp empathyp definep definep ideatep ideatep"
+        "prototype prototype prototype test test test"
+        "prototypeH3 prototypeH3 prototypeH3 testH3 testH3 testH3"
+        "prototypep prototypep prototypep testp testp testp";
+    }
+    
+    #empathy {
+        grid-area: empathy;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px 0px 30px 0px;
+    }  
+    
+    #define {
+        grid-area: define;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px 0px 30px 0px;
+    } 
+    
+    #ideate {
+        grid-area: ideate;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px 0px 30px 0px;
+    } 
+    
+    #prototype {
+        grid-area: prototype;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px 0px 30px 0px;
+    } 
+    
+    #test {
+        grid-area: test;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px 0px 30px 0px;
+    } 
+    
+    .empathyH3 {
+        grid-area: empathyH3
+        font-family: american typewriter;
+        font-size: 15px;
+        font-style: Semibold;
+        color: #707070;
+        text-align: center;
+       
+    }
+    
+    .empathyp {
+        grid-area: empathyp;
+        font-family: american typewriter;
+        font-size: 11px;
+        font-style: Regular;
+        color: #707070;
+        text-align: center;
+        list-style: none;
+    }
+    
+    .defineH3 {
+        grid-area: defineH3;
+        font-family: american typewriter;
+        font-size: 15px;
+        font-style: Semibold;
+        color: #707070;
+        text-align: center;
+       
+    }
+    
+    .definep {
+        grid-area: definep;
+        font-family: american typewriter;
+        font-size: 11px;
+        font-style: Regular;
+        color: #707070;
+        text-align: center;
+        list-style: none;
+    }
+    
+    .ideateH3 {
+        grid-area: ideateH3;
+        font-family: american typewriter;
+        font-size: 15px;
+        font-style: Semibold;
+        color: #707070;
+        text-align: center;
+       
+    }
+    
+    .ideatep {
+        grid-area: ideatep;
+        font-family: american typewriter;
+        font-size: 11px;
+        font-style: Regular;
+        color: #707070;
+        text-align: center;
+        list-style: none;
+    }
+    
+    .prototypeH3 {
+        grid-area: prototypeH3;
+        font-family: american typewriter;
+        font-size: 15px;
+        font-style: Semibold;
+        color: #707070;
+        text-align: center;
+      
+    }
+    
+    .prototypep {
+        grid-area: prototypep;
+        font-family: american typewriter;
+        font-size: 11px;
+        font-style: Regular;
+        color: #707070;
+        text-align: center;
+        list-style: none;
+    }
+    
+    .testH3 {
+        grid-area: testH3;
+        font-family: american typewriter;
+        font-size: 15px;
+        font-style: Semibold;
+        color: #707070;
+        text-align: center;
+    
+        
+    }
+    
+    .testp {
+        grid-area: testp;
+        font-family: american typewriter;
+        font-size: 11px;
+        font-style: Regular;
+        color: #707070;
+        text-align: center;
+        list-style: none;
+    }
 }
