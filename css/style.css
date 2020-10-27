@@ -16,8 +16,18 @@
     color: #B48E8E;
 }
 
+a {
+    text-decoration: none;
+    font-family: american typewriter;
+    font-size: 30px;
+    font-style: semibold;
+    color: #B48E8E;
+
+}
+
 .navItem {
     width: 10%;
+    cursor: pointer;
 }
 
 .highlight {
@@ -53,12 +63,13 @@ img {
 
 #containerGrid {
     display: grid;
-    height: 800px;
+    height: 825px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
     "headingOne headingOne headingOne headingOne"
-    "headshot headshot aboutInfo aboutInfo";
+    "headshot headshot aboutInfo aboutInfo"
+    "button button button button";
 }
 
 .headingOne {
@@ -83,6 +94,18 @@ img {
     grid-area: aboutInfo;
     background-color: #EDE3DF;
     margin-left: 10px;
+}
+
+.button {
+    grid-area: button;
+    font-family: american typewriter;
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #FFFFFF;
+    color: #B48E8E;
+    height: 55px;
 }
 
 .aboutInfo h3 {
@@ -952,3 +975,4 @@ img {
         list-style: none;
     }
 }
+
