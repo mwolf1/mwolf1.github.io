@@ -149,6 +149,7 @@ img {
     grid-area: crawlCure;
     background-color: #D6DBD5;
     margin-bottom: 35px;
+    cursor: pointer;
 }
 
 #nasa {
